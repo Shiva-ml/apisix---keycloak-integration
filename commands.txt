@@ -1,0 +1,21 @@
+docker pull apache/apisix
+
+docker run -d --name apache-apisix -p 9080:9080 -e APISIX_STAND_ALONE=true apache/apisix
+
+docker cp apisix.yaml apache-apisix:/usr/local/apisix/conf/apisix.yaml
+
+docker exec -it apache-apisix apisix reload
+
+curl http://127.0.0.1:9080/
+
+docker restart container
+
+
+docker pull keycloak/keycloak:latest
+
+
+docker run -d --name "apisix-quickstart-keycloak"  -e KC_BOOTSTRAP_ADMIN_USERNAME=admin -e KC_BOOTSTRAP_ADMIN_PASSWORD=admin -p 8080:8080 keycloak/keycloak:latest start-dev
+
+
+when requesting toke, request using wsl ip
+in yaml file of apisix provide wsl ip for keycloak related part , in postman hit from local host :9080

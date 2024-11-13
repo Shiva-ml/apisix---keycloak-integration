@@ -1,0 +1,50 @@
+routes:
+  -
+    id: httpbin
+    uri: "/*"
+    upstream:
+      nodes:
+        "httpbin.org": 1
+      type: roundrobin
+    plugin_config_id: 1
+  - 
+    id: "authz-keycloak-route"
+    uri: "/anything"
+    plugins:
+      authz-keycloak:
+        policy_enforcement_mode: "PERMISSIVE"
+        lazy_load_paths: true
+        resource_registration_endpoint: "http://172.31.224.1:8080/realms/apisix/authz/protection/resource_set"
+        discovery: "http://172.31.224.1:8080/realms/apisix/.well-known/uma2-configuration"
+        client_id: "apisix"
+        client_secret: "KmIdDZgVUVE4IG8zHHLTFxY8X8Ut8Z5M"
+        scope: openid profile
+    upstream:
+      type: roundrobin
+      nodes:
+        "httpbin.org": 1
+  - 
+    id: "authz-keycloak-auth-route"
+    uri: "/api/*"
+    plugins:
+      authz-keycloak:
+        lazy_load_paths: false
+        resource_registration_endpoint: "http://172.31.224.1:8080/realms/apisix/authz/protection/resource_set"
+        discovery: "http://172.31.224.1:8080/realms/apisix/.well-known/uma2-configuration"
+        token_endpoint: "http://172.31.224.1:8080/realms/apisix/protocol/openid-connect/token"
+        client_id: "apisix"
+        client_secret: "KmIdDZgVUVE4IG8zHHLTFxY8X8Ut8Z5M"
+        password_grant_token_generation_incoming_uri: "/api/token"
+    upstream:
+      type: roundrobin
+      nodes:
+        "httpbin.org": 1
+
+plugin_configs:
+  -
+    id: 1
+    plugins:
+      response-rewrite:
+        body: "Hello APISIX\n"
+    desc: "response-rewrite"
+#END
