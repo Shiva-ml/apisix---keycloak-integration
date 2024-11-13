@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "1f4ac14c-aecd-4985-80fe-2c6d1aa3b6dd",
+		"name": "apisix keycloak docker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "36968234"
+	},
+	"item": [
+		{
+			"name": "mic check",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJXbnRQMXRNR3NmZXl4VUtqR3ZLNXZFSEtrRVZ6dnN3UUw2cDhFVUNMaE5ZIn0.eyJleHAiOjE3MzA5Njg4NzYsImlhdCI6MTczMDk2ODU3NiwianRpIjoiNGNjZTM4NTMtNmE4Ni00ZWViLWI5NGYtZTAzZTA1NzliMmMyIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdC9yZWFsbXMvbWFzdGVyIiwiYXVkIjpbIm1hc3Rlci1yZWFsbSIsImJyb2tlciIsImFjY291bnQiXSwic3ViIjoiZDM0M2MzZGEtZTdlYi00ZWZlLWE4MTktYzhkOTJlM2Q5MWY4IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiY2giLCJzaWQiOiIyNDg4ODI0ZS05MzFkLTQzMTAtYmNiNy0yMTRjMzYyM2YxNDIiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLW1hc3RlciIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJtYXN0ZXItcmVhbG0iOnsicm9sZXMiOlsidmlldy1pZGVudGl0eS1wcm92aWRlcnMiLCJ2aWV3LXJlYWxtIiwibWFuYWdlLWlkZW50aXR5LXByb3ZpZGVycyIsImltcGVyc29uYXRpb24iLCJjcmVhdGUtY2xpZW50IiwibWFuYWdlLXVzZXJzIiwicXVlcnktcmVhbG1zIiwidmlldy1hdXRob3JpemF0aW9uIiwicXVlcnktY2xpZW50cyIsInF1ZXJ5LXVzZXJzIiwibWFuYWdlLWV2ZW50cyIsIm1hbmFnZS1yZWFsbSIsInZpZXctZXZlbnRzIiwidmlldy11c2VycyIsInZpZXctY2xpZW50cyIsIm1hbmFnZS1hdXRob3JpemF0aW9uIiwibWFuYWdlLWNsaWVudHMiLCJxdWVyeS1ncm91cHMiXX0sImJyb2tlciI6eyJyb2xlcyI6WyJyZWFkLXRva2VuIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50Iiwidmlldy1hcHBsaWNhdGlvbnMiLCJ2aWV3LWNvbnNlbnQiLCJ2aWV3LWdyb3VwcyIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwiZGVsZXRlLWFjY291bnQiLCJtYW5hZ2UtY29uc2VudCIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIGVtYWlsIHByb2ZpbGUiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsInByZWZlcnJlZF91c2VybmFtZSI6ImtfYWRtaW4iLCJlbWFpbCI6ImtfYWRtaW5AdGNzLmNvbSJ9.jCkuq0AgAmbNcEFUw29p_J6oRrPEqpi1UDV84CGRg4GUv7gNslHF27NqlPBgZauT0SALassw2WnPW62lscuW8ehBzYoxQY0TnlTP1yq9avsIya_t9lRwQO2gfZOFNgniXa-Da1hDfkFZp7zcFcDvHj5Z7j4qHgQtgYElgPI7yV69KlCGWWkybRFC_YjTVos4f9uvRkswIgXmfoDVTNXJScZGh67a3vwOiMY2kmD0A6-Id4yB1T7BJPILNt7v_0hrVXEb7CbrnWO3kUJOVAY59UInCAARYAPFpHiMh4lIRF1FdK_Tav4mTF5NRv8jKIZVYDcvL6--v96WnZqoKROW4g"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "edd1c9f034335f136f87ad84b625c8f1"
+					}
+				],
+				"url": "http://127.0.0.1:9080/"
+			},
+			"response": []
+		},
+		{
+			"name": "/anything",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIwS0RkZHFEcGlaSnE5ZkpDa0VFREZkWGFlYWVOY1o0ZU9HSFJ1elEzVFZjIn0.eyJleHAiOjE3MzE0ODg5MDcsImlhdCI6MTczMTQ4ODYwNywianRpIjoiMTM3YWRjZTUtYWVlNS00NGJhLTg0NDItOTI2OWQ1YjE5MDEyIiwiaXNzIjoiaHR0cDovLzE3Mi4zMS4yMjQuMTo4MDgwL3JlYWxtcy9hcGlzaXgiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZTgwOWI1ZjMtNWVmMi00ZDg3LWIyMzgtMjU5NTQ3YTQ5ZTkxIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYXBpc2l4Iiwic2lkIjoiNjM0MTM1OTQtYzI5Zi00NmM2LWE1NzAtODRlNTA3NTIzNGEzIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1hcGlzaXgiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiMTIzIDEyMyIsInByZWZlcnJlZF91c2VybmFtZSI6InNoaXZhIiwiZ2l2ZW5fbmFtZSI6IjEyMyIsImZhbWlseV9uYW1lIjoiMTIzIiwiZW1haWwiOiIxMjNAdGVzdC5jb20ifQ.LZAjt3F_8xd8ICq3uC6wrAv0LZws0l-np2cawLu7QBQejCUJQXTNAD-hn3aon-VUCs751m7bpQrIGsxus6C6-O_KA8f3BTnvYUR1IdzzHCya0zp1cxHmSi4mXoqaL3CbG-s_nshbHf9YlB7qMcmB5pBxB6X85o2iIYfaE42kI_DB1JsJ9vKhDiW0wKb1FfMGfq7uC3QgCX2ADzZmfFBu-BZTKdAwQ3Q-3fjVU90yMG_wWYiBPBKG668m8Rv3qrMIlUgGA1pUkrPArGfKADXS3z0JekOIya_MrPlmZteOnYGpC0bNSVad1xG6X6wBesGF38RYcVSQpjp5Fs39Wk-S7A"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": "http://127.0.0.1:9080/anything"
+			},
+			"response": []
+		},
+		{
+			"name": "keycloak wellknown",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-API-KEY",
+						"value": "edd1c9f034335f136f87ad84b625c8f1"
+					}
+				],
+				"url": "http://localhost:8080/realms/apisix/.well-known/openid-configuration"
+			},
+			"response": []
+		},
+		{
+			"name": "etcd",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:2379/version"
+			},
+			"response": []
+		},
+		{
+			"name": "keycloak authentication",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "apisix",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "KmIdDZgVUVE4IG8zHHLTFxY8X8Ut8Z5M",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "shiva",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://172.31.224.1:8080/realms/apisix/protocol/openid-connect/token"
+			},
+			"response": []
+		},
+		{
+			"name": "apisix keycloak authentication Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "apisix",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "KmIdDZgVUVE4IG8zHHLTFxY8X8Ut8Z5M",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "shiva",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:9080/api/token"
+			},
+			"response": []
+		},
+		{
+			"name": "keycloak wellknown Copy 3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJyaVUzU0ViVFJwSUIxVEJHdmZhNE9lanp2QWhoVGVUTjdnZkhWTHhLSlZnIn0.eyJleHAiOjE3MzE0MDM0NzYsImlhdCI6MTczMTQwMzE3NiwianRpIjoiZGYwN2QyOWItZjFmOC00MjU3LWI0ZGUtZmFmZWEzN2EzZjVjIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9hcGlzaXgiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiOTVlYjgwODYtYmFjYS00YTY4LThlYjItNGVhYzQ2YTllZGU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYXBpc2l4Iiwic2lkIjoiZTk4YTZkZWUtYjcyYS00YWFlLTk1MWYtYThlYmY1ZDRkZGE3IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1hcGlzaXgiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiMTIzIDEyMyIsInByZWZlcnJlZF91c2VybmFtZSI6InNoaXZhIiwiZ2l2ZW5fbmFtZSI6IjEyMyIsImZhbWlseV9uYW1lIjoiMTIzIiwiZW1haWwiOiIxMjNAdGVzdC5jb20ifQ.WOEzj4Mp_gXz8qnoS0OaefsbpPyUC8G2Z4rQHQi0yyTGBRCoPjqjdb01xj7agwk6_X0rXxrbrlQzRu2P3l0NJrny7K-0diQydkyJPC3IdwXC_XhYdSCC-FpEg49L1tPSKZmKP0ui_lZdniI22JQHOZCgUO-zZbHf8w-LaNuRuAo42T00v5W6TH2RBJ6IdWTRo12HF7IbPY2w-Xo5eQMbcYoh2qmCCUTDgtIXMU-gq-PSX07IvaE3_VUKjXUFYfa7c41y8nWGVg8sezgci6nQ4r2dkkol60qVA7gjs4u84rBNTt8lYmIGYbqeOKNunh1Jjkw5Iwx7cU5Mo7xRMq9JCg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:9080/"
+			},
+			"response": []
+		},
+		{
+			"name": "keycloak wellknown Copy 4",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJyaVUzU0ViVFJwSUIxVEJHdmZhNE9lanp2QWhoVGVUTjdnZkhWTHhLSlZnIn0.eyJleHAiOjE3MzE0MDM0NzYsImlhdCI6MTczMTQwMzE3NiwianRpIjoiZGYwN2QyOWItZjFmOC00MjU3LWI0ZGUtZmFmZWEzN2EzZjVjIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9hcGlzaXgiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiOTVlYjgwODYtYmFjYS00YTY4LThlYjItNGVhYzQ2YTllZGU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYXBpc2l4Iiwic2lkIjoiZTk4YTZkZWUtYjcyYS00YWFlLTk1MWYtYThlYmY1ZDRkZGE3IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1hcGlzaXgiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiMTIzIDEyMyIsInByZWZlcnJlZF91c2VybmFtZSI6InNoaXZhIiwiZ2l2ZW5fbmFtZSI6IjEyMyIsImZhbWlseV9uYW1lIjoiMTIzIiwiZW1haWwiOiIxMjNAdGVzdC5jb20ifQ.WOEzj4Mp_gXz8qnoS0OaefsbpPyUC8G2Z4rQHQi0yyTGBRCoPjqjdb01xj7agwk6_X0rXxrbrlQzRu2P3l0NJrny7K-0diQydkyJPC3IdwXC_XhYdSCC-FpEg49L1tPSKZmKP0ui_lZdniI22JQHOZCgUO-zZbHf8w-LaNuRuAo42T00v5W6TH2RBJ6IdWTRo12HF7IbPY2w-Xo5eQMbcYoh2qmCCUTDgtIXMU-gq-PSX07IvaE3_VUKjXUFYfa7c41y8nWGVg8sezgci6nQ4r2dkkol60qVA7gjs4u84rBNTt8lYmIGYbqeOKNunh1Jjkw5Iwx7cU5Mo7xRMq9JCg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:9080/"
+			},
+			"response": []
+		},
+		{
+			"name": "keycloak wellknown Copy 5",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJyaVUzU0ViVFJwSUIxVEJHdmZhNE9lanp2QWhoVGVUTjdnZkhWTHhLSlZnIn0.eyJleHAiOjE3MzE0MDM0NzYsImlhdCI6MTczMTQwMzE3NiwianRpIjoiZGYwN2QyOWItZjFmOC00MjU3LWI0ZGUtZmFmZWEzN2EzZjVjIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9hcGlzaXgiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiOTVlYjgwODYtYmFjYS00YTY4LThlYjItNGVhYzQ2YTllZGU2IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYXBpc2l4Iiwic2lkIjoiZTk4YTZkZWUtYjcyYS00YWFlLTk1MWYtYThlYmY1ZDRkZGE3IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1hcGlzaXgiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiMTIzIDEyMyIsInByZWZlcnJlZF91c2VybmFtZSI6InNoaXZhIiwiZ2l2ZW5fbmFtZSI6IjEyMyIsImZhbWlseV9uYW1lIjoiMTIzIiwiZW1haWwiOiIxMjNAdGVzdC5jb20ifQ.WOEzj4Mp_gXz8qnoS0OaefsbpPyUC8G2Z4rQHQi0yyTGBRCoPjqjdb01xj7agwk6_X0rXxrbrlQzRu2P3l0NJrny7K-0diQydkyJPC3IdwXC_XhYdSCC-FpEg49L1tPSKZmKP0ui_lZdniI22JQHOZCgUO-zZbHf8w-LaNuRuAo42T00v5W6TH2RBJ6IdWTRo12HF7IbPY2w-Xo5eQMbcYoh2qmCCUTDgtIXMU-gq-PSX07IvaE3_VUKjXUFYfa7c41y8nWGVg8sezgci6nQ4r2dkkol60qVA7gjs4u84rBNTt8lYmIGYbqeOKNunh1Jjkw5Iwx7cU5Mo7xRMq9JCg"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:9080/"
+			},
+			"response": []
+		}
+	]
+}
